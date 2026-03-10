@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/notifier-user",
+    "description": "Package notifier-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\NotifierUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "webmozart/assert": "^1.0",
+        "symfony/lock": "^7.0",
+        "symfony/event-dispatcher": "^7.0",
+        "firebase/php-jwt": "^6.0",
+        "nikic/php-parser": "^5.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
